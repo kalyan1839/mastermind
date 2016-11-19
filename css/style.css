@@ -1,4 +1,35 @@
-/* line 1, ../sass/style.scss */
+/* line 6, ../sass/style.scss */
 body {
-  background: #ddd;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 14, ../sass/style.scss */
+#container {
+  background: #fff;
+  height: 800px;
+  -moz-box-shadow: 0px 0px 15px 0px #164881;
+  -webkit-box-shadow: 0px 0px 15px 0px #164881;
+  box-shadow: 0px 0px 15px 0px #164881;
+}
+
+/* line 23, ../sass/style.scss */
+.header .navbar {
+  font-family: "Fugaz One", cursive;
+  border: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #003b73;
+}
+/* line 28, ../sass/style.scss */
+.header .navbar .navbar-brand {
+  font-size: 20px;
+  color: #fff;
+}
+/* line 38, ../sass/style.scss */
+.header .navbar .navbar-nav > li > a {
+  color: #eee;
 }
