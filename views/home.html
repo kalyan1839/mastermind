@@ -1,4 +1,14 @@
 <div class="col-md-12">
 	<div class="row banner">
 	</div>
+	<div class="row section text-center">
+		<h1 class="title text-center">Competitions</h1>
+		<div class="tile" ng-repeat="c in competitions" title="{{c.caption}}">
+			<h3 ng-bind="c.caption"></h3>
+			<div class="stats text-left">
+				<span>{{c.numberOfTeams}} Teams</span>
+				<span class="pull-right">{{c.numberOfGames}} Matches</span>
+			</div>
+		</div>
+	</div>
 </div>

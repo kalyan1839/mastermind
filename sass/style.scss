@@ -72,4 +72,65 @@ body
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+
+	.section
+	{
+		padding: 20px 35px;
+		.title
+		{
+			margin: 0px;
+			font-family: $font2;
+			margin-bottom: 15px;
+			font-size: 26px;
+			color: #003b73;
+		}
+	}
+}
+
+.tile
+{
+	font-family: $font2;
+    width: 175px;
+    padding: 10px;
+    float: left;
+    border: 1px solid #ddd;
+    min-height: 115px;
+    display: inline-block;
+    @include background-image(linear-gradient(to bottom right, #070e20, #003b73));
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);	
+    border-radius: 3px;
+    color: #eee;
+    cursor: pointer;
+    @include transition(all 0.5s);
+    &:hover
+    {
+    	box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    	@include background-image(linear-gradient(to bottom right, #003b73, #070e20));
+    	color: #fff;
+    }
+	h3
+	{
+		margin: 0px;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		height: 40px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+
+	.stats
+	{
+		padding-top: 10px;
+		span
+		{
+			display: inline-block;
+		    width: 50px;
+		    text-align: center;
+		    font-size: 12px;
+		}
+	}
 }
